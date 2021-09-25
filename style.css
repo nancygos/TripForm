@@ -120,7 +120,7 @@ h1{
     width: 10px;
     height: 2px;
     background: red;
-    transform: rotate(40deg);
+    transform: rotate(35deg);
     position: relative;
     top: -2px;
 }
@@ -128,7 +128,7 @@ h1{
     width: 10px;
     height: 2px;
     background: red;
-    transform: rotate(140deg);
+    transform: rotate(145deg);
     position: relative;
     top: -4px;
 }
