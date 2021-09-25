@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <form class="from">
+            <h1>Antartica College Trip</h1>
+            <input type="text" placeholder="Enter your full name" id="Username">
+            <input type="number" name="number" id="number" placeholder="Enter your phone number">
+
+            <!-- <div class="gender">
+                
+                <input type="radio" name="gender" id="male">
+                <input type="radio" name="gender" id="female">
+            </div> -->
+
+            <input type="number" name="rollNumber" id="rollNumber" placeholder="Enter your roll number">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Message if any"></textarea>
+
+            <button type="submit" class="btn" id="btn">Submit</button>
+
+            <div class="stars">
+                <div class="star1">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="star2">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="star3">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </form>
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        
+    </main>
+
+    <script>
+        let btn = document.getElementById('btn');
+
+        let Username = document.getElementById('Username');
+        let number = document.getElementById('number');
+        let rollNumber = document.getElementById('rollNumber');
+
+        btn.addEventListener("click" , ()=>{
+            // alert('hi');
+            if(rollNumber.value  && number.value  && Username.value ){
+                alert("Successfully submitted");
+            }
+            else{
+                alert("Please fill the required details");
+            }
+        })
+    </script>
+</body>
+</html>
