@@ -138,6 +138,7 @@ h1{
     position: absolute;
     bottom:0;
     height: 15%;
+    max-height: 10%;
     width: 100%;
     animation: wave 5s ease-in-out forwards;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -195,6 +196,7 @@ h1{
     display:inline-block;
 }
 
+/* Small screen */
 @media screen and (max-width:360px ) {
     .star1{
         position: absolute;
@@ -211,4 +213,12 @@ h1{
         top: 49%;
         right: 11%;
     }   
+}
+
+
+/* Large screen */
+@media screen and (min-width:600px) {
+    .wave{
+        max-height: 16%;
+    }
 }
