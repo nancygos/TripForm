@@ -133,6 +133,67 @@ h1{
     top: -4px;
 }
 
+/* wave animation */
+.wave{
+    position: absolute;
+    bottom:0;
+    height: 15%;
+    width: 100%;
+    animation: wave 5s ease-in-out forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-timing-function: ; */
+    display: none;
+}
+
+@keyframes wave {
+    0%{
+        height: 15%;
+    }
+    30%{
+        opacity: 0.7;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        /* display: none; */
+    }
+
+}
+
+.ship{
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    animation: move 4s ease-in-out forwards;
+    display: none;
+}
+
+@keyframes move {
+    0%{
+      transform: translateX(5vw);  
+    }
+    90%{
+        transform: translateX(70vw);  
+        opacity:1;
+
+    }
+    100%{
+        transform: translateX(80vw);  
+        opacity:0;
+    }
+}
+
+.show{
+    display:inline-block;
+}
 
 @media screen and (max-width:360px ) {
     .star1{

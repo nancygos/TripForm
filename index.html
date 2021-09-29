@@ -25,7 +25,7 @@
             <input type="number" name="rollNumber" id="rollNumber" placeholder="Enter your roll number">
             <textarea name="text" id="text" cols="30" rows="10" placeholder="Message if any"></textarea>
 
-            <button type="submit" class="btn" id="btn">Submit</button>
+            <button type="button" class="btn" id="btn">Submit</button>
 
             <div class="stars">
                 <div class="star1">
@@ -51,22 +51,9 @@
         
     </main>
 
-    <script>
-        let btn = document.getElementById('btn');
+    <img src="wave.png" alt="wave" class="wave" id="wave">
+    <img src="ship.jpg" alt="ship" class="ship" id="ship">
 
-        let Username = document.getElementById('Username');
-        let number = document.getElementById('number');
-        let rollNumber = document.getElementById('rollNumber');
-
-        btn.addEventListener("click" , ()=>{
-            // alert('hi');
-            if(rollNumber.value  && number.value  && Username.value ){
-                alert("Successfully submitted");
-            }
-            else{
-                alert("Please fill the required details");
-            }
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
