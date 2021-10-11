@@ -17,6 +17,8 @@ btn.addEventListener("click" , ()=>{
     else{
         alert("Please fill the required details");
     }
+    
+    getdataHere();
 
     text.value='';
     Username.value='';
@@ -24,3 +26,32 @@ btn.addEventListener("click" , ()=>{
     rollNumber.value='';
     
 });
+
+// Temp storage
+
+// let str = [];
+
+const getdataHere = () =>{
+    const obj = [
+        {
+            Username: Username.value,
+            number: number.value,
+            roll: rollNumber.value,
+            message: text.value
+        }
+    ];
+    
+    if( localStorage.getItem('data') === null){
+        let str = [];
+        str.push([obj]);
+        localStorage.setItem('data',JSON.stringify(str));
+    }
+    else{
+        let newList =localStorage.getItem('data');
+        str = JSON.parse(newList);
+
+        str.push(obj);
+        // str.country = "str";
+        localStorage.setItem('data',JSON.stringify(str));
+    }
+}
