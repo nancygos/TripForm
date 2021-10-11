@@ -93,46 +93,22 @@ h1{
 }
 
 /* star */
-
-.star1{
+.stars{
+    color:red;
+    font-size: 25px;
+    font-weight: 600;
     position: absolute;
-    top: 22%;
+    top:15%;
     right: 11%;
+}
+.star1{
+    margin: 4vh 0;
+    /* background: blue; */
 }
 .star2{
-    position: absolute;
-    top: 42%;
-    right: 11%;
+    margin: 4vh 0;
+    /* background: blue; */
 }
-.star3{
-    position: absolute;
-    top: 32%;
-    right: 11%;
-}
-
-.line1{
-    width: 10px;
-    height: 2px;
-    background: red;
-    transform: rotate(90deg);
-}
-.line2{
-    width: 10px;
-    height: 2px;
-    background: red;
-    transform: rotate(35deg);
-    position: relative;
-    top: -2px;
-}
-.line3{
-    width: 10px;
-    height: 2px;
-    background: red;
-    transform: rotate(145deg);
-    position: relative;
-    top: -4px;
-}
-
 /* wave animation */
 .wave{
     position: absolute;
@@ -197,22 +173,10 @@ h1{
 }
 
 /* Small screen */
-@media screen and (max-width:360px ) {
-    .star1{
-        position: absolute;
-        top:29%;
-        right: 11%;
-    }
-    .star2{
-        position: absolute;
-        top: 39%;
-        right: 11%;
-    }
-    .star3{
-        position: absolute;
-        top: 49%;
-        right: 11%;
-    }   
+@media screen and (max-width:363px ) {
+    .stars{
+        top:22%;
+    } 
 }
 
 
